@@ -41,6 +41,7 @@
 */
 
 // t: current time, b: begInnIng value, c: change In value, d: duration
+jQuery = $ = require('jquery')
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
@@ -4741,7 +4742,7 @@ return PickerConstructor
 
     // Node.js/browserify.
     else if ( typeof exports == 'object' )
-        module.exports = factory( require('./picker.js'), require('jquery') )
+        module.exports = factory( require('../../node_modules/pickadate/lib/picker.js'), require('jquery') )
 
     // Browser globals.
     else factory( Picker, jQuery )
