@@ -43,6 +43,7 @@
 // t: current time, b: begInnIng value, c: change In value, d: duration
 jQuery = $ = require('jquery')
 jQuery.easing['jswing'] = jQuery.easing['swing'];
+Hammer = require('hammerjs')
 
 jQuery.extend( jQuery.easing,
 {
